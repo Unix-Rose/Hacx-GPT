@@ -6,21 +6,16 @@
 import os
 import sys
 import time
-import requests
-import colorama
-import openai
-from pwinput import pwinput
-from colorama import Fore
+from pwinput # type: ignore
+import Fore # type: ignore
 
 try:
-    import pwinput
     import requests
     import colorama
     import openai
 except ImportError:
     _ = os.system('pip install pwinput requests colorama openai' if os.name == 'nt' else 'pip3 install pwinput requests colorama openai')
 
-from pwinput import pwinput
 from colorama import Fore
 
 # Regular text colors
